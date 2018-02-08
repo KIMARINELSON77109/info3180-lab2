@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block main %}
+    <div class="container">
+      <div class="row">
+        <div>
+          <div class="user-detail text-center rounded-top">
+            <div class="background p-5 rounded-top">
+              <div class="row">
+                <div class="col-lg-12 col-12 user-img mb-3">
+                  <img src="{{url_for('static', filename = 'nelson.jpg')}}" class="rounded-circle">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12 col-12 u-name mb-3">
+                  <strong>Kimari Nelson</strong>
+                </div>
+              </div>
+              <div class = "Personal-detail">
+                  <p>@knelson</p>
+                  <p>Kingston,Jamaica</p>
+                  <p>Joined {{date}}</p>
+              </div>
+            </div>
+          </div>
+          <div class="text-center panel rounded-bottom pos">
+                <div class="col-lg-12 col-12 user-profession profile-detail">
+                  <p>Aspiring Data Scientist, dreamer, a self-driven, boundary less individual who has great interest in using technology to change the landscape of this planet.</p>
+                </div>
+            <ul class="nav nav-pills" role="tablist">
+              <li class="col-lg-4 col-4 p-0">
+                  <p class="m-0 txt-size"><strong>7</strong><br>Post</p>
+              </li>
+              <li class="col-lg-4 col-2 p-0">
+                  <p class="m-0 txt-size"><strong>100</strong><br>Following</p>
+              </li>
+              <li class=" col-lg-4 col-2 p-0">
+                  <p class="m-0 txt-size"><strong>250</strong><br>Follower</p>
+              </li>
+            </ul>
+            <div class = "profile-userbuttons">
+              <button type="button" class= "btn btn-success btn-sm">Follow</button>
+            </div>
+          </div>
+        </div>
+{% endblock %}
